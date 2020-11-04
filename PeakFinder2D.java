@@ -19,15 +19,18 @@ public class PeakFinder2D
         PeakFinder2D.nrow = nrow;
         PeakFinder2D.ncol = ncol;
 
-        for (int i = 0; i < nrow; i++) {
-            for (int j = 0; j < ncol; j++) {
+        for (int i = 0; i < nrow; i++) 
+        {
+            for (int j = 0; j < ncol; j++) 
+            {
                 a[i][j] = r.nextInt(10) ; 
             }
         }
     }
 
     // Function that find peak with greedy algorithm
-    public int greedyAlg() {
+    public int greedyAlg()
+    {
         int peak = a[0][0];
 
         int i = 0;
@@ -195,8 +198,10 @@ public class PeakFinder2D
     // Prints elements of a[][]
     void printArray() 
     {
-        for (int i = 0; i < nrow; i++) {
-            for (int j = 0; j < ncol; j++) {
+        for (int i = 0; i < nrow; i++) 
+        {
+            for (int j = 0; j < ncol; j++) 
+            {
                 System.out.printf("%2d",a[i][j]);
                 System.out.print(" ");
             }
